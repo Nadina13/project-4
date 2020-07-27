@@ -1,0 +1,24 @@
+/* Variables */ 
+
+$color-one: #ffffff;
+$color-two: #2f2e2e;
+$color-three: #000000;
+$color-four: #fcb603;
+$font-header: 'Hammersmith One', sans-serif;
+$font-main: 'Playfair Display', serif;
+$font-text: 'Alegreya', serif;
+
+/* Global */ 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+body {
+    margin: 0;
+    text-align: center;
+    color: $color-two;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+}
