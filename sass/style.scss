@@ -7,6 +7,7 @@ $color-four: #fcb603;
 $font-header: 'Hammersmith One', sans-serif;
 $font-main: 'Playfair Display', serif;
 $font-text: 'Alegreya', serif;
+$transition: all 0.5s;
 
 /* Global */ 
 
@@ -21,4 +22,164 @@ body {
     font-size: 16px;
     line-height: 1.7;
     font-family: $font-text;
+}
+
+/* Splash */
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url("https://c.pxhere.com/photos/76/9e/gadgets_office_equipment_iphone_music_men's_purse_glasses-971375.jpg!d");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 25%;
+}
+
+.name {
+    position: absolute;
+    top: 3%;
+    left: 20%;
+}
+
+.name a {
+    color: $color-four;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.main-navigation {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+
+    a {
+        text-decoration: none;
+        font-family: $font-header;
+        text-transform: uppercase;
+        color: $color-one;
+            &:hover {
+                color: $color-four;
+        }
+    }        
+
+    ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            padding: 0 35px 0 0;
+        }
+
+    }
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .splash-subtitle {
+        color: $color-one;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    .splash-title {
+        font-family: $font-header;
+        font-size: 65px;
+        text-transform: uppercase;
+        color: $color-one;
+    }
+
+    .btn {
+        display: inline-block;
+        max-width: 180px;
+        padding: 12px 34px;
+        border: 2px solid $color-four;
+        border-radius: 5px;
+        color: $color-one;
+        font-family: $font-header;
+        text-transform: uppercase;
+        background-color: $color-four;
+        cursor: pointer;
+        background-position: 100% 0;
+        transition: $transition;
+
+        &:hover {
+            color: $color-four;
+            background-color: $color-one;
+            border: $color-one;
+        }
+
+    }
+}
+
+/* Services */
+
+.services {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 450px;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 30px auto 0 auto;
+        
+        .row {
+            margin: 0;
+            padding: 30px 80px;
+            
+            h1 {
+                font-family: $font-header;
+                color: $color-three;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        
+            p {
+                color: $color-two;
+                line-height: 1.2;
+            }
+
+            span {
+                font-style: italic;
+            }
+
+            .icon {
+                height: 60px;
+                width: 60px;
+                border: 2px solid $color-four;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0;
+                text-align: center;
+                margin: 0 auto 20px auto;
+            }
+
+            i {
+                font-size: 30px;
+                color: $color-four;
+                padding: 10px;
+            }
+
+            h3 {
+                font-family: $font-header;
+                color: $color-three;
+                font-size: 22px;
+                font-weight: bold;
+            }                
+
+        }
+    }
 }

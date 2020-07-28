@@ -12,3 +12,159 @@ body {
   line-height: 1.7;
   font-family: "Alegreya", serif;
 }
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://c.pxhere.com/photos/76/9e/gadgets_office_equipment_iphone_music_men's_purse_glasses-971375.jpg!d");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100% 25%;
+}
+
+.name {
+  position: absolute;
+  top: 3%;
+  left: 20%;
+}
+
+.name a {
+  color: #fcb603;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.main-navigation {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-navigation a:hover {
+  color: #fcb603;
+}
+
+.main-navigation ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-navigation ul li {
+  display: inline-block;
+  padding: 0 35px 0 0;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash-inner .splash-subtitle {
+  color: #ffffff;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.splash-inner .splash-title {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 65px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.splash-inner .btn {
+  display: inline-block;
+  max-width: 180px;
+  padding: 12px 34px;
+  border: 2px solid #fcb603;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  background-color: #fcb603;
+  cursor: pointer;
+  background-position: 100% 0;
+  transition: all 0.5s;
+}
+
+.splash-inner .btn:hover {
+  color: #fcb603;
+  background-color: #ffffff;
+  border: #ffffff;
+}
+
+/* Services */
+.services {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 450px;
+}
+
+.services .container {
+  width: 100%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+.services .container .row {
+  margin: 0;
+  padding: 30px 80px;
+}
+
+.services .container .row h1 {
+  font-family: "Hammersmith One", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.services .container .row p {
+  color: #2f2e2e;
+  line-height: 1.2;
+}
+
+.services .container .row span {
+  font-style: italic;
+}
+
+.services .container .row .icon {
+  height: 60px;
+  width: 60px;
+  border: 2px solid #fcb603;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.services .container .row i {
+  font-size: 30px;
+  color: #fcb603;
+  padding: 10px;
+}
+
+.services .container .row h3 {
+  font-family: "Hammersmith One", sans-serif;
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
